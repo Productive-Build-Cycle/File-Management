@@ -19,5 +19,19 @@ public class FileController :ControllerBase
                 At = DateTime.UtcNow
             });
     }
+    /// <summary>
+    /// Get a file by id
+    /// </summary>
+    /// <param name="id"></param>
+    /// <returns></returns>
+    [HttpGet("id:int")]
+    public IActionResult GetFileById(int id)
+    {
+        return Ok(new
+        {
+            Id = id,
+            Message = "Not implemented yet",
+        });
+    }
     
 }
