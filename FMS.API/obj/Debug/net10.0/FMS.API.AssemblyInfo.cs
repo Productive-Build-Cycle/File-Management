@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FMS.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+456d2b0809aba00bf21c5c40e5ae058c2a6881dc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+600d68e00f4d31a1664a5224e9b7dc88c02b5ac0")]
 [assembly: System.Reflection.AssemblyProductAttribute("FMS.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FMS.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
