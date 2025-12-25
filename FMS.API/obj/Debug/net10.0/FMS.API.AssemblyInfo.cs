@@ -13,7 +13,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FMS.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9c979d82fae7fc90a4b1b6b37d68d27651e7b9fb")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5d0783f9443b5f5de531405bb1025867b6d277b9")]
+>>>>>>> feat/init-db
 [assembly: System.Reflection.AssemblyProductAttribute("FMS.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FMS.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
