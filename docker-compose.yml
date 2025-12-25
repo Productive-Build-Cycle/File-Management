@@ -1,0 +1,17 @@
+﻿version: "3.9"
+
+services:
+  sqlserver:
+    container_name: fms.sqlserver
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    ports:
+      - "1433:1433"
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "FMS@2025Pass!"
+    volumes:
+      - fms_sql_data:/var/opt/mssql
+    restart: unless-stopped
+
+volumes:
+  fms_sql_data:
