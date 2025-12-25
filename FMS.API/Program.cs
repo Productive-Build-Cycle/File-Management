@@ -1,6 +1,10 @@
 using FMS.API.Extensions;
+using FMS.API.Persistence.Repositories;
+using FMS.API.Persistence.Repositories.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddScoped<IFileObjectRepository, FileObjectObjectRepository>();
 
 builder.Services.AddControllers();
 builder.Services.AddPersistence(builder.Configuration);

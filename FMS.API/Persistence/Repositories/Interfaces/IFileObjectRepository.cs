@@ -2,10 +2,10 @@
 
 namespace FMS.API.Persistence.Repositories.Interfaces;
 
-public interface IFileRepository
+public interface IFileObjectRepository
 {
-    Task<FileObject> AddSync(IFormFile file);
-    Task<IEnumerable<FileObject>> GetAllAsync();
+    Task AddAsync(FileObject fileObject, CancellationToken ct = default);
+    Task<IReadOnlyList<FileObject>> GetAllAsync(CancellationToken ct = default);
     //TODO GetByIdAsync
     //TODO UpdateAsync
     //TODO SoftDeleteAsync
