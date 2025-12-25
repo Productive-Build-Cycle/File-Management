@@ -191,3 +191,8 @@ D:\Productive Build Cycle\File-Management\FMS.API\obj\Debug\net10.0\refint\FMS.A
 D:\Productive Build Cycle\File-Management\FMS.API\obj\Debug\net10.0\FMS.API.pdb
 D:\Productive Build Cycle\File-Management\FMS.API\obj\Debug\net10.0\FMS.API.genruntimeconfig.cache
 D:\Productive Build Cycle\File-Management\FMS.API\obj\Debug\net10.0\ref\FMS.API.dll
+D:\Productive Build Cycle\File-Management\FMS.API\bin\Debug\net10.0\Microsoft.OpenApi.dll
+D:\Productive Build Cycle\File-Management\FMS.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Productive Build Cycle\File-Management\FMS.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Productive Build Cycle\File-Management\FMS.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Productive Build Cycle\File-Management\FMS.API\obj\Debug\net10.0\FMS.API.MvcApplicationPartsAssemblyInfo.cs
