@@ -1,0 +1,6 @@
+﻿namespace FMS.API.Services.Interfaces;
+
+public interface IFileObjectService
+{
+    
+}
