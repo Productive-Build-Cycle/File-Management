@@ -1,23 +1,31 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using FMS.API.DTOs;
+using FMS.API.Services.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 
 namespace FMS.API.Controller;
 
 [ApiController]
 [Route("api/[controller]")]
-public class FileController :ControllerBase
+public class FileController(
+    IFileObjectService _file
+    ) :ControllerBase
 {
+    
+    private readonly IFileObjectService _file;
     /// <summary>
     /// Upload a new file (metadata only - storage not implemented yet
     /// </summary>
     /// <returns></returns>
     [HttpPost]
-    public IActionResult UploadFile()
+    //add request size limit
+    public async  Task<ActionResult<FileUploadResult>> UploadFile(
+        [FromForm] FileUploadRequest request,
+        CancellationToken ct 
+        )
     {
-        return Ok(new
-            {
-                Message = "File uploaded successfully",
-                At = DateTime.UtcNow
-            });
+        if(request.File.Length == 0) return BadRequest("No file uploaded");
+        var result = await _file.UploadFileAsync(request, ct);
+        return Ok(result);
     }
     /// <summary>
     /// Get a file by id
@@ -38,12 +46,11 @@ public class FileController :ControllerBase
     /// </summary>
     /// <returns></returns>
     [HttpGet]
-    public IActionResult GetFiles()
+    public async Task<ActionResult<IReadOnlyList<FileObjectDto>>> GetFiles(CancellationToken ct = default)
     {
-        return Ok(new
-        {
-            Message = "All files list",
-        });
+        var result = await _file.GetAllFilesAsync(ct);
+        if(result.Count == 0) return NotFound("No files found");
+        return Ok(result);
     }
     /// <summary>
     /// Update a file by Id
