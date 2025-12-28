@@ -1,0 +1,19 @@
+﻿# Ignore Git and IDE stuff
+.git
+.gitignore
+.idea/
+.vs/
+**/*.user
+**/*.suo
+
+# Build output
+**/bin/
+**/obj/
+**/out/
+
+# Docker files that shouldn't be copied inadvertently
+**/*.md
+README*
+
+# Node/Front-end (if added later)
+node_modules/
